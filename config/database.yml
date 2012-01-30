@@ -1,0 +1,9 @@
+development:
+  log_level: :debug
+  db: sqlite://db.sqlite
+testing:
+  log_level: :warn
+  db: sqlite://db.sqlite
+production:
+  log_level: :warn
+  db: mysql://user:<%= ENV['DB_PASS'] %>@localhost/db
